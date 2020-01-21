@@ -25,17 +25,6 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    grid-template-areas:
-      "wook-text"
-      "wook-image";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-  }
-
   h1 {
     font-size: calc(3.5rem + 5.5vw);
     margin: 5vw 0;
@@ -45,6 +34,15 @@ main {
   img {
     max-height: 99vh;
     max-width: 95vw;
+  }
+
+  main {
+    grid-template-areas:
+      "wook-text"
+      "wook-image";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
   }
 
   .wook-image {
