@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(to right, #a68c7b, #5e5149);
+  color: #fff;
+  font-family: "Akronim", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: calc(3.5rem + 5.9vw);
+  font-weight: 100;
+  text-shadow: 0px 3px 2px #00c9ac;
+}
+
+img {
+  max-height: 99vh;
+  max-width: 90%;
+}
+
+main {
+  align-items: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    grid-template-areas:
+      "wook-text"
+      "wook-image";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: calc(3.5rem + 5.5vw);
+    margin: 5vw 0;
+    text-align: center;
+  }
+
+  img {
+    max-height: 99vh;
+    max-width: 95vw;
+  }
+
+  .wook-image {
+    grid-area: wook-image;
+  }
+
+  .wook-text {
+    grid-area: wook-text;
+  }
+}
